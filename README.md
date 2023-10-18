@@ -7,3 +7,5 @@ Still no path completed
 
 ### In progress
 - [C#](https://exercism.org/tracks/csharp)
+- [PHP](https://exercism.org/tracks/php)
+- [ABAP](https://exercism.org/tracks/abap)
