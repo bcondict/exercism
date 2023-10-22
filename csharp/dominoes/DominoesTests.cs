@@ -10,26 +10,36 @@ public class DominoesTests
         Assert.True(Dominoes.CanChain(dominoes));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    // [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Singleton_input_singleton_output()
     {
         var dominoes = new[] { (1, 1) };
         Assert.True(Dominoes.CanChain(dominoes));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    // [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Singleton_that_cant_be_chained()
     {
         var dominoes = new[] { (1, 2) };
         Assert.False(Dominoes.CanChain(dominoes));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    // [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Three_elements()
     {
-        var dominoes = new[] { (1, 2), (3, 1), (2, 3) };
+        var dominoes = new[] { (1, 2), (3, 1), (2, 3)};
         Assert.True(Dominoes.CanChain(dominoes));
     }
+    [Fact]
+    public void Four_elements()
+    {
+        var dominoes = new[] { (1, 2), (3, 1), (2, 3), (4, 1)};
+        Assert.False(Dominoes.CanChain(dominoes));
+    }
+ 
 
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void Can_reverse_dominoes()
